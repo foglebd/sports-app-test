@@ -1,5 +1,5 @@
 {
-  "name": "sports-app-test",
+  "name": "mern-auth",
   "version": "1.0.0",
   "description": "Mern Auth Example",
   "main": "server.js",
@@ -23,14 +23,5 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.9.0"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/foglebd/sports-app-test.git"
-  },
-  "bugs": {
-    "url": "https://github.com/foglebd/sports-app-test/issues"
-  },
-  "homepage": "https://github.com/foglebd/sports-app-test#readme"
+  }
 }
