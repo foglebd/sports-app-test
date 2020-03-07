@@ -22,13 +22,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 // Connect to MongoDB
-mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log("MongoDB successfully connected"))
-  .catch(err => console.log(err));
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://heroku_t3xl531g:c0l0r@d0@ds035488.mlab.com:35488/heroku_t3xl531g",
+)
 
 // Passport middleware
 app.use(passport.initialize());
